@@ -11,6 +11,8 @@
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
+    "sass": "^1.79.1",
+    "scss": "^0.2.4",
     "vue": "^3.4.37"
   },
   "devDependencies": {

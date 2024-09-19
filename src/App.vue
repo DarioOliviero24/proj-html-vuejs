@@ -6,9 +6,11 @@
   3) Utilizzo del componente
 */
 // 1) Importazione del componente
-import AppFooter from './components/AppFooter.vue';
+
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
+
+
 
 export default {
   data() {
@@ -19,8 +21,7 @@ export default {
   // 2) Dichiarazione del componente
   components: {
     AppHeader,
-    AppMain,
-    AppFooter
+    AppMain
   },
   methods: {
     
@@ -33,11 +34,11 @@ export default {
     <!-- 3) Utilizzo del componente -->
     <AppHeader/>
     <AppMain/>
-    <AppFooter/>
   </div>
 </template>
 
 <style lang="scss">
+
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
 

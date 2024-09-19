@@ -30,16 +30,30 @@ export default {
                 
             </div>
             <div class="container d-flex">
-                <div class="card">
+                <div class="card text-center">
+                    <div class="py-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                           <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
+                           <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"/>
+                        </svg>
+                    </div>
+                    <h3>Buildings</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing  <br> 
+                        Quibusdam consequuntur blanditiis perferendis porro ab <br>
+                         accusantium quod.</p>
+                </div>
+                <div class="card text-center">
+                    <div>
+
+                    </div>
+                    <h3></h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia consectetur, nulla blanditiis maiores ullam laborum impedit?</p>
 
                 </div>
-                <div class="card">
+                <div class="card text-center">
 
                 </div>
-                <div class="card">
-
-                </div>
-                <div class="card">
+                <div class="card text-center">
 
                 </div>
                 
@@ -50,8 +64,9 @@ export default {
   </main>
 </template>
 
-<style lang="scss" scoped>
-@use '../assets/scss/partials/variables' as *;
+<style lang="scss">
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
 
 .BG2{
     background-color: #fed03d;

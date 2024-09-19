@@ -57,8 +57,10 @@ export default {
 
 </template>
 
-<style lang="scss" scoped>
-@use '../assets/scss/partials/variables' as *;
+<style lang="scss">
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
 header{
   list-style: none;
 }

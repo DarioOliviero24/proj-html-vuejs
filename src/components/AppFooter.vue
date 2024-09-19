@@ -2,20 +2,25 @@
 export default {
   data() {
     return { 
-      message: 'Template Vite + Vue'
+      
     }
   }
 }
 </script>
 
 <template>
-  <footer>
-   
-  </footer>
+    <footer>
+        <div>
+            <h1></h1>
+        </div>
+    </footer>
+
 </template>
 
-<style lang="scss" scoped>
-@use '../assets/scss/partials/variables' as *;
+<style lang="scss">
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
 
 
 </style>
