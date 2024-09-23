@@ -17,22 +17,22 @@ export default {
     <div>
       <ul class="d-flex list-unstyled py-5">
         <li>
-          <a class="px-4" href="">HOME</a>
+          <a class="px-4 a" href="">HOME</a>
         </li>
         <li>
-          <a class="px-4" href="">ABOUT</a>
+          <a class="px-4 a" href="">ABOUT</a>
         </li>
         <li>
-          <a class="px-4" href="">SERVICES</a>
+          <a class="px-4 a" href="">SERVICES</a>
         </li>
         <li>
-          <a class="px-4" href="">WORK</a>
+          <a class="px-4 a" href="">WORK</a>
         </li>
         <li>
-          <a class="px-4" href="">ARTICLES</a>
+          <a class="px-4 a" href="">ARTICLES</a>
         </li>
         <li class="square">
-          <a id="A" class="px-4" href="">GET QUOTE</a>
+          <a id="A" class="px-4 a" href="">GET QUOTE</a>
         </li>
       </ul>
     </div>
@@ -57,14 +57,14 @@ export default {
 
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
 
 header{
   list-style: none;
 }
-a{
+.a{
   text-decoration: none;
   color: black;
 }
