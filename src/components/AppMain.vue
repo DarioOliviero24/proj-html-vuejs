@@ -277,12 +277,24 @@ export default {
                         <div>
                             <img class="img-latest" src="/img/blog-post-134132600-600x362.jpg" alt="img1">
                         </div>
+                        <div class="P">
+                            <h3>Redeveloping Florida's <br> Remote Southern Coast</h3>
+                            <p>December 7th, 2015</p>
+                            <hr>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta corporis optio, ipsa et vero maxime quisquam. Voluptate ipsa amet soluta?</p>
+                        </div>
 
                     </div>
                     <!--2-->
                     <div class="Card-Latest">
                         <div>
                             <img class="img-latest" src="/img/blog-post-92486644-600x362.jpg" alt="img1">
+                        </div>
+                        <div class="P">
+                            <h3>How We Manage Large <br> Construction Projects</h3>
+                            <p>December 7th, 2015</p>
+                            <hr>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta corporis optio, ipsa et vero maxime quisquam. Voluptate ipsa amet soluta?</p>
                         </div>
 
                     </div>
@@ -291,10 +303,71 @@ export default {
                         <div>
                             <img class="img-latest" src="/img/blog-post-332773904-600x362.jpg" alt="img1">
                         </div>
+                        <div class="P">
+                            <h3>Future proofing a modern <br> home</h3>
+                            <p>December 6th, 2015</p>
+                            <hr>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta corporis optio, ipsa et vero maxime quisquam. Voluptate ipsa amet soluta?</p>
+                        </div>
 
                     </div>
                 </div>
+                <div class="container text-center py-5">
+                        <div>
+                            <a class="a" href="">VIEW ALL ARTICLES</a>
+                        </div>
+
+                </div>
             </div>
+        </div>
+        <!--TRUSTED PARTNERS-->
+        <div>
+            <div class="container text-center py-5">
+                <h1>Trusted Partners</h1>
+                <hr class="hr">
+                <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, sapiente distinctio esse quae nobis magni modi architecto culpa eos numquam, autem tenetur possimus neque, dolor aperiam reiciendis sed rem. Reprehenderit nostrum labore quisquam iusto ipsa!</p>
+            </div>
+            <div class="container d-flex py-3">
+                <!--1-->
+                <div>
+                    <img class="M img-Partners PB " src="/img/LOGO1.png" alt="LOGO1">
+                </div>
+                <!--2-->
+                <div>
+                    <img class="M img-Partners PB" src="/img/LOGO2.png" alt="logo2">
+                </div>
+                <!--3-->
+                <div>
+                    <img class="M img-Partners PB" src="/img/LOGO3.png" alt="logo2">
+                </div>
+                <!--4-->
+                <div>
+                    <img class="M img-Partners PB" src="/img/LOGO4.png" alt="logo2">
+                </div>
+                <!--5-->
+                <div>
+                    <img class="M img-Partners PB" src="/img/LOGO5.png" alt="logo2">
+                </div>
+            </div>
+        </div>
+        <!--BUILDING INSPIRING SPACES-->
+        <div class="building-bg">
+            <div class="d-flex container py-5">
+                <div class="py-5">
+                    <h4 class="h4">Building Inspiring Spaces</h4>
+                    <hr class="hr3">
+                    <p class="p">
+                        Vivamus sed consecteur tellus dolor sit amet, consectetur adipiscing <br>
+                        lorem elit sadip ipsum ficilis uns.
+                    </p>
+
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+
         </div>
         
 
@@ -471,5 +544,36 @@ button {
 .img-latest{
     width: 100%;
 
+}
+.img-Partners{
+    width: 100%;
+
+}
+.P{
+    padding: 20px;
+}
+.PB{
+    padding-bottom: 50px;
+}
+.building-bg{
+    background-image: url('img/about-call-to-action-57862405.jpg');
+    height: 400px;
+}
+.h4{
+    color: white;
+}
+.hr3{
+    width: 150px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #fed03d;
+    border: 3px solid #fed03d;
+}
+.p{
+    color: white;
+}
+.BULD{
+    display: flex;
+    justify-content: space-between;
 }
 </style>
