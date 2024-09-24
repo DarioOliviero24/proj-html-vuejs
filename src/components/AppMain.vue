@@ -275,16 +275,22 @@ export default {
                     <!--1-->
                     <div class="Card-Latest">
                         <div>
-                          
+                            <img class="img-latest" src="/img/blog-post-134132600-600x362.jpg" alt="img1">
                         </div>
 
                     </div>
                     <!--2-->
                     <div class="Card-Latest">
+                        <div>
+                            <img class="img-latest" src="/img/blog-post-92486644-600x362.jpg" alt="img1">
+                        </div>
 
                     </div>
                     <!--3-->
                     <div class="Card-Latest">
+                        <div>
+                            <img class="img-latest" src="/img/blog-post-332773904-600x362.jpg" alt="img1">
+                        </div>
 
                     </div>
                 </div>
@@ -461,5 +467,9 @@ button {
     width: 30%;
     margin: 0 auto;
     border: 2px solid #f5f5f5;
+}
+.img-latest{
+    width: 100%;
+
 }
 </style>
