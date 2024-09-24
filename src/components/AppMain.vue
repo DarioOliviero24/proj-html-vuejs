@@ -2,10 +2,23 @@
 export default {
   data() {
     return { 
-      
+        currentSlide: 0,
+        totalSlides: 2, // Numero di slide
+    };
+  },
+  methods: {
+    nextSlide() {
+      // Vai alla slide successiva, ritorna alla prima se sei all'ultima
+      this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
+    },
+    prevSlide() {
+      // Vai alla slide precedente, torna all'ultima se sei alla prima
+      this.currentSlide =
+        (this.currentSlide - 1 + this.totalSlides) % this.totalSlides;
     }
   }
-}
+
+  };
 </script>
 
 <template>
@@ -227,9 +240,55 @@ export default {
             </div>
             <!--Carosello-->
             <div>
-              CAROSELLO VUE problemi 
+                <div class="carousel-container">
+                    <div class="carousel" :style="{ transform: `translateX(-${currentSlide * 100}%)` }">
+                        <div class="slide" id="slide1">
+                            <h1>Our Home Owners Say</h1>
+                            <hr class="hr-slide">
+                            <img class="img-slide py-4" src="/img/home-testimonial-113165296.jpg" alt="testimonial1">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repellendus voluptatibus id neque earum vero!</p>
+                            <h6>HARRY SMITH - NEW HOME OWNER</h6>
+                        </div>
+                        <div class="slide d-none" id="slide2">
+                            <h1>Our Home Owners Say</h1>
+                            <hr class="hr-slide">
+                            <img class="img-slide py-4" src="/img/home-testimonial-84268399.jpg" alt="testimonial2">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repellendus voluptatibus id neque earum vero!</p>
+                            <h6>HARRY SMITH - NEW HOME OWNER</h6>
+                        </div>
+                    </div>
+                    <!-- Pulsanti di navigazione -->
+                    <button class="prev" @click="prevSlide">❮</button>
+                    <button class="next" @click="nextSlide">❯</button>
+                </div>
             </div>
+            <!--LATEST NEWS-->
+            <div class="py-5">
+                <div class="text-center">
+                    <h1>Latest News</h1>
+                    <hr class="hr2">
+                    <p class="py-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero repellat expedita amet incidunt corporis quo alias, magnam mollitia similique at. <br>
+                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum labore voluptates nemo ut sequi, autem maiores eligendi minima quidem delectus.
+                    </p>
+                </div>
+                <div class="d-flex container py-5">
+                    <!--1-->
+                    <div class="Card-Latest">
+                        <div>
+                          
+                        </div>
 
+                    </div>
+                    <!--2-->
+                    <div class="Card-Latest">
+
+                    </div>
+                    <!--3-->
+                    <div class="Card-Latest">
+
+                    </div>
+                </div>
+            </div>
         </div>
         
 
@@ -277,7 +336,7 @@ export default {
 .Position-absolut{
     position: absolute;
     left: 45%;
-    bottom: 100%;
+    top: 3%;
 }
 .Curved{
     background-image: url('../img/home.jpg');
@@ -329,5 +388,78 @@ a{
 .C4{
     background-color: #a7cf47;
 
+}
+//CAROUSEL 
+.carousel-container {
+  width: 100%;
+  height: 100vh; 
+  padding-bottom: 100px;
+  overflow: hidden;
+  position: relative;
+}
+.carousel {
+  display: flex;
+  width: 100%; 
+  height: 100%;
+  transition: transform 5s ease;
+  }
+  .slide {
+  width: 100%; 
+  height: 100vh;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  color: white; 
+  background-size: cover;
+  background-position: center;
+}
+#slide1 {
+  background-image: url('img/home-parallax-144609983.jpg');
+}
+#slide2{
+  background-image: url('img/home-parallax-144609983.jpg');
+}
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+//fine carousel 
+.img-slide{
+    border-radius: 50%;
+}
+.hr-slide{
+    width: 20%;
+    margin-top: 30px;
+    color: #fed03d;
+    border: 3px solid #fed03d;
+}
+.hr2{
+    width: 20%;
+    margin-left: 700px;
+    margin-top: 30px;
+    color: #fed03d;
+    border: 3px solid #fed03d;
+}
+.Card-Latest{
+    background-color: white;
+    height: 600px;
+    width: 30%;
+    margin: 0 auto;
+    border: 2px solid #f5f5f5;
 }
 </style>
