@@ -7,6 +7,8 @@
 */
 // 1) Importazione del componente
 
+
+import AppFooter from './components/AppFooter.vue';
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 
@@ -21,7 +23,8 @@ export default {
   // 2) Dichiarazione del componente
   components: {
     AppHeader,
-    AppMain
+    AppMain,
+    AppFooter
   },
   methods: {
     
@@ -34,6 +37,7 @@ export default {
     <!-- 3) Utilizzo del componente -->
     <AppHeader/>
     <AppMain/>
+    <AppFooter/>
   </div>
 </template>
 

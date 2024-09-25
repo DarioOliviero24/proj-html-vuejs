@@ -248,14 +248,7 @@ export default {
                             <img class="img-slide py-4" src="/img/home-testimonial-113165296.jpg" alt="testimonial1">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repellendus voluptatibus id neque earum vero!</p>
                             <h6>HARRY SMITH - NEW HOME OWNER</h6>
-                        </div>
-                        <div class="slide d-none" id="slide2">
-                            <h1>Our Home Owners Say</h1>
-                            <hr class="hr-slide">
-                            <img class="img-slide py-4" src="/img/home-testimonial-84268399.jpg" alt="testimonial2">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repellendus voluptatibus id neque earum vero!</p>
-                            <h6>HARRY SMITH - NEW HOME OWNER</h6>
-                        </div>
+                        </div>    
                     </div>
                     <!-- Pulsanti di navigazione -->
                     <button class="prev" @click="prevSlide">❮</button>
@@ -349,28 +342,7 @@ export default {
                     <img class="M img-Partners PB" src="/img/LOGO5.png" alt="logo2">
                 </div>
             </div>
-        </div>
-        <!--BUILDING INSPIRING SPACES-->
-        <div class="building-bg">
-            <div class="d-flex container py-5">
-                <div class="py-5">
-                    <h4 class="h4">Building Inspiring Spaces</h4>
-                    <hr class="hr3">
-                    <p class="p">
-                        Vivamus sed consecteur tellus dolor sit amet, consectetur adipiscing <br>
-                        lorem elit sadip ipsum ficilis uns.
-                    </p>
-
-
-                </div>
-                <div>
-
-                </div>
-            </div>
-
-        </div>
-        
-
+        </div>    
     </div>
   </main>
 </template>
@@ -555,25 +527,5 @@ button {
 .PB{
     padding-bottom: 50px;
 }
-.building-bg{
-    background-image: url('img/about-call-to-action-57862405.jpg');
-    height: 400px;
-}
-.h4{
-    color: white;
-}
-.hr3{
-    width: 150px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    color: #fed03d;
-    border: 3px solid #fed03d;
-}
-.p{
-    color: white;
-}
-.BULD{
-    display: flex;
-    justify-content: space-between;
-}
+
 </style>
