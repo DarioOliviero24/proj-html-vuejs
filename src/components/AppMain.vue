@@ -28,7 +28,7 @@ export default {
             Do You Have A Construction Project We Can Help With?
         </h3>
         <div class="text-center">
-        <button class="B3 Position-absolut">
+        <button class="B3 Position-absolut ">
             GET A FREE QUOTE
         </button>
         </div>
@@ -356,7 +356,7 @@ export default {
 .B3{
     background-color: black;
     color: white;
-    height: 40px;
+    height: 50px;
     border: 1px solid white;
 }
 .hr{
@@ -387,7 +387,7 @@ export default {
 .Position-absolut{
     position: absolute;
     left: 45%;
-    top: 3%;
+    top: 2.2%;
 }
 .Curved{
     background-image: url('../img/home.jpg');

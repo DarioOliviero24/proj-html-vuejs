@@ -49,31 +49,27 @@ export default {
           </div>
           <div class="py-4">
             <img class="img-fot" src="/img/fusion2.png" alt="fusion2">
-          </div>
-          
+          </div>  
         </div>
         <!--CARD-FOT3-->
         <div class="card-fot">
           <h6 class="HF">CONTACT US TODAY</h6>
           <div class="py-2">
             <img src="/img/contact-us.png" alt="contact">
-          </div>
-          
+          </div>  
         </div>
         <!--CARD-FOT4-->
         <div class="card-fot">
           <h6 class="HF">FIND US</h6>
           <div>
             <img src="/img/findus.png" alt="find us">
-          </div>
-          
+          </div>  
         </div>
-        
-
       </div>
-
     </div>
-
+    <div class="BG-footer-bottom">
+      <img class="img-fot" src="/img/footer-bottom.png" alt="footer">
+    </div>
 </template>
 
 <style lang="scss">
@@ -101,7 +97,6 @@ export default {
 //footer top
 .BG-top{
   background-color: #1e1e1e;
-  height: 500px;
 
 }
 .card-fot{
